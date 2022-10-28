@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Roll Roll Your Dice!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="initialize()">
+    <div>
+        <p>Welcome to Roll Roll Roll Your Dice! You give me the number of dice to roll and how many times, I'll give you the statistics on it.</p>
+        <br />
+        <form id="inputform">
+            Number of dice to roll: 
+            <br />
+            <label>
+                <input type="radio" name="diceroll" value=1 />
+                1
+            </label>
+            <label>
+                <input type="radio" name="diceroll" value=2 />
+                2
+            </label>
+            <label>
+                <input type="radio" name="diceroll" value=3 />
+                3
+            </label>
+            <br />
+            <br />
+            <label>
+                How many times to roll the dice:
+                <input type="text" id="rolltimes" name="rolltimes" />
+            </label>
+        </form>
+        <button id="rollBut" onclick="recordData()">Roll</button>
+    </div>
+    <br />
+    <br />
+    <div>
+        <table id="dicetable">
+            <tr>
+                <th>Result</th>
+                <th>Frequency</th>
+                <th>Mean</th>
+                <th>Median</th>
+                <th>Mode</th>
+                <th>Frequency of Doubles</th>
+                <th>Frequency of Triples</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

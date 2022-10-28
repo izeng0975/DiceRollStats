@@ -1,0 +1,19 @@
+body
+{
+    background-image: url("dicebg.jpg");
+    font-size: 25px;
+}
+table, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 7px;
+}
+button
+{
+    display: inline;
+}
+form
+{
+    display: inline;
+}
